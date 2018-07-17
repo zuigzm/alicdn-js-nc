@@ -1,0 +1,8 @@
+{
+  "name": "alicdn-js-nc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zuigzm/alicdn-js-nc.git",
+  "author": "zuigzm <zuigzm@gmail.com>",
+  "license": "MIT"
+}
