@@ -2,10 +2,10 @@
 !(function(e, n) {
   n(e);
   // console.log(noCaptcha())
-  const nc = function(apt) {
+  export default (function nc (apt) {
     return noCaptcha(apt);
-  };
-  module.exports = nc;
+  });
+
 })(window, function(e, n) {
   function cond() {
     return Math.random();

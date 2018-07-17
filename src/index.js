@@ -1,3 +1,5 @@
-import noCaptcha from "./noCaptcha";
+import noCaptcha from './noCaptcha';
+
+console.log(noCaptcha)
 
 export { noCaptcha };
