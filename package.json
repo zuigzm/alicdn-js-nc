@@ -4,5 +4,15 @@
   "main": "/build/index.js",
   "repository": "https://github.com/zuigzm/alicdn-js-nc.git",
   "author": "zuigzm <zuigzm@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^3.0.7"
+  }
 }
