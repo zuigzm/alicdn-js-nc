@@ -1,12 +1,7 @@
 /* v1.2.16,1.2.18,1 2018-04-18 21:13:30 */
-!(function(e, n) {
-  n(e);
-  // console.log(noCaptcha())
-  export default (function nc (apt) {
-    return noCaptcha(apt);
-  });
-
-})(window, function(e, n) {
+!(function(n) {
+  exports.ncpc = n
+})(function(n) {
   function cond() {
     return Math.random();
   }

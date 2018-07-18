@@ -1,21 +1,27 @@
 {
   "name": "alicdn-js-nc",
-  "version": "1.0.0",
-  "main": "/build/index.js",
+  "version": "1.1.2",
+  "main": "./build/index.js",
   "repository": "https://github.com/zuigzm/alicdn-js-nc.git",
   "author": "zuigzm <zuigzm@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015-rollup": "^3.0.0",
-    "eslint": "^5.1.0",
-    "eslint-config-airbnb": "^17.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-import": "^2.12.0",
     "rollup": "^0.62.0",
-    "rollup-plugin-babel": "^3.0.7"
-  }
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -c"
+  },
+  "dependencies": {}
 }

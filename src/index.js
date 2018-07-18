@@ -1,5 +1,5 @@
-import noCaptcha from './noCaptcha';
+import './ncpc';
 
-console.log(noCaptcha)
+console.log(noCaptcha);
 
 export { noCaptcha };
