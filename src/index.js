@@ -1,7 +1,7 @@
 import './ncpc';
 
 class sd {
-  noCaptcha(opt) {
+  static noCaptcha(opt) {
     const newNcpc = noCaptcha;
     // 删除 window noCaptcha 方法，避免全局暴露
     delete window.noCaptcha;
@@ -10,6 +10,4 @@ class sd {
   }
 }
 
-const __ = new sd();
-
-export default __;
+export default sd;

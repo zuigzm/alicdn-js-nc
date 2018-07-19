@@ -2629,7 +2629,7 @@ var sd = function () {
     classCallCheck(this, sd);
   }
 
-  createClass(sd, [{
+  createClass(sd, null, [{
     key: 'noCaptcha',
     value: function (_noCaptcha) {
       function noCaptcha(_x) {
@@ -2652,7 +2652,5 @@ var sd = function () {
   return sd;
 }();
 
-var __ = new sd();
-
-module.exports = __;
+module.exports = sd;
 //# sourceMappingURL=index.js.map
