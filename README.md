@@ -16,5 +16,5 @@ import { noCaptcha } from 'alicdn-js-nc'
 
 ## 滑动验证PC-WEB版本
 
-* [js源码](https//g.alicdn.com/sd/ncpc/nc.js)
+* [js源码](https://g.alicdn.com/sd/ncpc/nc.js)
 * [官方使用说明](https://help.aliyun.com/document_detail/66317.html?spm=a2c4g.11186623.4.1.LEGs9R)

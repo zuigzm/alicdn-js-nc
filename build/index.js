@@ -1,12 +1,34 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
   return typeof obj;
 } : function (obj) {
   return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
 };
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
 
 /* v1.2.16,1.2.18,1 2018-04-18 21:13:30 */
 !function () {
@@ -2602,7 +2624,35 @@ win._n_bak = win._n;var o = [win._n_bak, this.baseFn.obj2str(this._prepare_resul
   };chkQuerySet(), cond() > GREY_RATIO ? STABLE_ACTION() : NEW_ACTION();
 }();
 
-console.log(noCaptcha);
+var sd = function () {
+  function sd() {
+    classCallCheck(this, sd);
+  }
 
-exports.noCaptcha = noCaptcha;
+  createClass(sd, [{
+    key: 'noCaptcha',
+    value: function (_noCaptcha) {
+      function noCaptcha(_x) {
+        return _noCaptcha.apply(this, arguments);
+      }
+
+      noCaptcha.toString = function () {
+        return _noCaptcha.toString();
+      };
+
+      return noCaptcha;
+    }(function (opt) {
+      var newNcpc = noCaptcha;
+      // 删除 window noCaptcha 方法，避免全局暴露
+      delete window.noCaptcha;
+
+      return newNcpc(opt);
+    })
+  }]);
+  return sd;
+}();
+
+var __ = new sd();
+
+module.exports = __;
 //# sourceMappingURL=index.js.map
