@@ -31,7 +31,7 @@ var createClass = function () {
 }();
 
 /* v1.2.16,1.2.18,1 2018-04-18 21:13:30 */
-!function () {
+function ncpc () {
   function cond() {
     return Math.random();
   }function chkQuerySet() {
@@ -2622,7 +2622,7 @@ win._n_bak = win._n;var o = [win._n_bak, this.baseFn.obj2str(this._prepare_resul
       }, i.resolve = o, e.exports = i, i.id = 135;
     }]);
   };chkQuerySet(), cond() > GREY_RATIO ? STABLE_ACTION() : NEW_ACTION();
-}();
+}
 
 var sd = function () {
   function sd() {
@@ -2642,10 +2642,12 @@ var sd = function () {
 
       return noCaptcha;
     }(function (opt) {
+      ncpc();
       if (!(typeof noCaptcha === 'undefined')) {
         var nc = new noCaptcha(opt);
+        // this.nc = noCaptcha;
         // 删除 window noCaptcha 方法，避免全局暴露
-        delete window.noCaptcha;
+        // delete window.noCaptcha;
 
         return nc;
       }
