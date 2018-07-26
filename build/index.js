@@ -2642,11 +2642,13 @@ var sd = function () {
 
       return noCaptcha;
     }(function (opt) {
-      var newNcpc = noCaptcha;
-      // 删除 window noCaptcha 方法，避免全局暴露
-      delete window.noCaptcha;
+      if (!(typeof noCaptcha === 'undefined')) {
+        var nc = new noCaptcha(opt);
+        // 删除 window noCaptcha 方法，避免全局暴露
+        delete window.noCaptcha;
 
-      return newNcpc(opt);
+        return nc;
+      }
     })
   }]);
   return sd;
